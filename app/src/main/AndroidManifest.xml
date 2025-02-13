@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.princearyan.myutilityapp">
+
+    <!-- Permissions for external storage -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- Application details -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="ShopWell"
+        android:theme="@style/Theme.MyUtilityApp">
+
+        <!-- MainActivity: Entry point of the app -->
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.MyUtilityApp.NoActionBar"
+            android:exported="true">  <!-- Add exported attribute -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activity for Item Calculator -->
+        <activity android:name=".ItemCalculatorActivity"
+            android:exported="false" />  <!-- Explicitly define exported status -->
+
+        <!-- Activity for Notebook functionality -->
+        <activity android:name=".NotebookActivity"
+            android:exported="false" />
+
+        <!-- Activity for Basic Calculator -->
+        <activity android:name=".CalculatorActivity"
+            android:exported="false" />
+
+        <!-- Activity for Future feature (empty for now) -->
+        <activity android:name=".FutureFeatureActivity"
+            android:exported="false" />
+        <!-- ✅ Shopping List Activity (Newly Added) -->
+        <activity android:name=".ShoppingListActivity"
+            android:exported="false" />
+        <activity android:name=".UpcomingFeaturesActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <!-- Input field & Add button -->
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:scaleX="4"
+        android:scaleY="4"
+        app:srcCompat="@drawable/textlogo__1_" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/itemInput"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/listview_border"
+            android:hint="Enter item name"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!-- Shopping List -->
+    <ListView
+        android:id="@+id/shoppingListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@drawable/listview_border"
+        android:dividerHeight="1dp"
+        android:padding="5dp"
+        android:scrollbars="vertical" />
+
+    <!-- Buttons -->
+
+    <Button
+        android:id="@+id/addItemButton"
+        android:layout_width="393dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/ic_launcher_background"
+        android:padding="10dp"
+        android:text="➕"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/shoppingDoneButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/green"
+        android:padding="12dp"
+        android:text="✅ Shopping Done"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/clearHistoryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/red"
+        android:padding="12dp"
+        android:text="🗑 Clear History"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

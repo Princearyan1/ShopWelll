@@ -1,0 +1,79 @@
+<resources>
+
+    <!-- Base application theme -->
+
+
+    <!-- Custom NoActionBar theme -->
+    <style name="Theme.MyUtilityApp.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+    </style>
+    <style name="NumberButton">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="OperatorButton">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:background">@drawable/operator_bg</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="FunctionButton">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:background">@drawable/function_bg</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="EqualsButton">
+    <item name="android:layout_width">80dp</item>
+    <item name="android:layout_height">80dp</item>
+    <item name="android:background">@drawable/equals_bg</item>
+    <item name="android:textSize">24sp</item>
+    <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="CalculatorButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">#333333</item>
+    </style>
+
+
+
+    <style name="ClearButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">#D32F2F</item>
+    </style>
+
+    <style name="EqualButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">#4CAF50</item>
+    </style>
+
+
+
+</resources>

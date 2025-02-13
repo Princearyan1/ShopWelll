@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:visibility="visible">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        android:scaleX="4"
+        android:scaleY="4"
+        app:srcCompat="@drawable/textlogo__1_" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:text="Utility"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:columnCount="2"
+        android:padding="10dp"
+        android:rowCount="2">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_button"
+            android:onClick="openItemCalculator"
+            android:text="Item Calculator" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_button"
+            android:onClick="openNotebook"
+            android:text="Notebook" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_button"
+            android:onClick="openCalculator"
+            android:text="Calculator" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_button"
+            android:onClick="openFutureFeature"
+            android:text="Discount Calculator" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_button"
+            android:onClick="openShoppingList"
+            android:text="Shopping List" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_button"
+            android:onClick="openUpcomingFeatures"
+            android:text=" upcoming Feature.... " />
+
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:gravity="center"
+        android:text="Developed by @Prince Aryan"
+        android:textColor="#F2280D0D"
+        android:visibility="visible" />
+
+</LinearLayout>
