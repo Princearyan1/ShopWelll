@@ -12,6 +12,4 @@ Features
 
 
 
-[Doc2.png.docx](https://github.com/user-attachments/files/20839313/Doc2.png.docx)
-
 
